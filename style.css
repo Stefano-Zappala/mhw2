@@ -1,0 +1,136 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+.question-name {
+    background-image: url('COPERTINA.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 40px;
+    
+  }
+  
+
+  article section.choice-grid{
+    display: flex;
+    justify-content:space-around;
+    flex-direction:inherit;
+    flex-wrap: wrap;
+  
+    padding: 0;
+  }
+  
+  article section.choice-grid div 
+{
+    border: 1px solid #dcdcdc;
+    background-color: f4f4f4;
+
+    width: calc(32.5% - 20px);
+
+    height:250px;
+    margin: 10px 0px 10px 0px ;
+
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+   
+    padding: 10px;
+}
+
+
+
+
+article section.choice-grid div img.checkbox {
+  margin-top: 10PX;
+}
+
+section.choice-grid img{
+    height:100%;
+    width: 100%;   
+  }
+  
+
+
+
+  #RISULTATO
+{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 18px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#RISULTATO button{
+    height: 50px;
+    width: 100%;
+    background-color: #cecece;
+    font-size: large;
+}
+
+#RISULTATO button:hover{
+    background-color: #e0e0e0;
+}
+
+#RISULTATO h1{
+    text-align:left;
+}
+
+.hide{
+    display:none !important; 
+}
+
+
+  .ATTIVO{
+    background-color: #cfe3ff;
+  }
+
+  .NONATTIVO{
+    opacity: 0.6;
+  }
+
+
+
+  footer{
+    text-align: center;
+    font-family: monospace;
+    font-size: xx-large;
+    height: 100px;
+    background-color: rgb(71, 145, 129);
+    color: rgb(83, 83, 83);
+    border-top: 2px solid black;
+    margin: 0;
+ }
+ 
+
+
+
+  @media (max-width: 700px){
+    article {
+      margin: auto;
+      width: 95%;
+    }
+
+    header div span {
+      display: none;
+    }
+    .question-name  h1{
+      font-size: 40PX;
+    }
+
+    footer{
+      font-size: 20PX;
+    }
+
+  }
+ 
+  @media (max-width: 500px){
+
+    article section.choice-grid div 
+    {
+      width: calc(49% - 20px);
+    }
+
+
+  }
